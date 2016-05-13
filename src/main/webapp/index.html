@@ -1,218 +1,787 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-    <title>fang wei</title>
-    <!--
-    jquery-ui 在 components 目录下，通过模块名字可以直接引用。
-    -->
-    <link rel="stylesheet" type="text/css" href="/components/jquery-ui/themes/base/core_7c802ba.css" />
-    <link rel="stylesheet" type="text/css" href="/components/jquery-ui/themes/base/tabs_5a3d581.css" />
-    <link rel="stylesheet" type="text/css" href="/components/jquery-ui/themes/base/datepicker_77106fb.css" />
-    <link rel="stylesheet" type="text/css" href="/components/jquery-ui/themes/base/theme_0fb1364.css" />
-    <link rel="stylesheet" type="text/css" href="/components/bootstrap/dist/css/bootstrap.min_8bf70a2.css" />
-    <link rel="stylesheet" type="text/css" href="/components/zTree/css/zTreeStyle/zTreeStyle_284f5b4.css" />
-    <link rel="stylesheet" type="text/css" href="/css/style.css" />
-</head>
-<body>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<title>添加组件</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+		<link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css" />
+		<link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+		<script src="js/jquery-2.1.3.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jquery-ui.min.js"></script>
+		<script src="js/angular.min.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/controllers.js"></script>
+		<link rel="stylesheet" href="css/magicEdit.css" type="text/css" />
+		<link rel="stylesheet" href="css/uploadImg.css" type="text/css" />
+		<link rel="stylesheet" href="css/uploadlink.css" type="text/css" />
+	</head>
+	<body data-ng-app="app">
+		<div class="header">
+			<img src="images/head.png">
+		</div>
+		<div style="width:100px;height:100px;"></div>
+		<div class="container">
+			<div class="left-page">
+				<div class="left-page-screen">
+					<div class="screen-header">
+						<div class="setDate" style="display: none;">
+							<p>距离开始还有</p>
+							<p class="">
+								<span>0</span><span>0</span>天
+								<span>0</span><span>0</span>时
+								<span>0</span><span>0</span>分
+								<span>0</span><span>0</span>秒
+							</p>
+						</div>
+						<div class="edit-cube">
+							<button class="btn" id="magic-edit">编辑</button>
+							<button class="btn">删除</button>
+						</div>
+						<a href="javascript:" id="edit" style="border:1px solid #000;">
+							<div class="click">
+								<img src="images/add.png">
+							</div>
+						</a>
+					</div>
+					<div class="edit-content">
+						<!-- 手机图形中生成比例模块 -->
+					</div>
+				</div>
+			</div>
+			<div class="middle-page" style="width:370px;">
+				<div class="panel panel-default" id="magic-module">
+					<div class="panel-heading">添加组件</div>
+					<div class="panel-body">
+						<div class="middle-page-arrow">
+							<img src="images/arrow.png">
+						</div>
+						<div class="middle-page-module">
+							<div class="module-list">
+								<button class="btn btn-default">添加轮播</button>
+								<button class="btn btn-default">分类商品</button>
+								<button class="btn btn-default" id="magic-layout">魔法布局</button>
+								<button class="btn btn-default">富文本</button>
+								<button class="btn btn-default" style="width:">图片</button>
+								<button class="btn btn-default">按钮</button>
+								<button class="btn btn-default">空白</button>
+								<button class="btn btn-default">辅助线</button>
+								<button class="btn btn-default">插入页面</button>
+								<button class="btn btn-default">工具栏</button>
+								<button class="btn btn-default">导航栏</button>
+								<button class="btn btn-default">标题栏</button>
+								<button class="btn btn-default">搜索框</button>
+								<button class="btn btn-default" style="font-size:12px;">默认工具栏</button>
+								<button class="btn btn-default">实时支付</button>
+								<button class="btn btn-default" id="count-down">倒计时</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- 魔方编辑模块 -->
+				<div class="panel panel-default" id="magic-cube" style="display: none;width:300px;" data-ng-controller="myCtrl"> 
+					<div class="panel-heading">魔方编辑</div>
+					<div class="panel-body">
+						<div class="middle-page-arrow">
+							<img src="images/arrow.png">
+						</div>
+						<table class="middle-page-table">
+							<tr>
+								<td>列：</td>
+								<td><input type="text" class="form-control" id="column" data-ng-model="column" data-ng-change="alert(this)"></td>
+								<td style="width:50px;text-align: right">行：</td>
+								<td><input type="text" class="form-control" id="line" data-ng-model="line" data-ng-change="alert(this)"></td>
+							</tr>
+							<tr>
+								<td>行高比例：</td>
+								<td><input type="text" class="form-control" id="percentage"></td>
+							</tr>
+						</table>
+						<ol class="middle-page-sudoku" id="selectable"><!-- 魔法编辑生成比例模块 -->
+							<li class="ui-state-default sudoku-number" data-ng-repeat="item in items" style="width:{{item.width}};height:{{item.height}}">
+								{{item.num}}
+							</li>
+						</ol>
 
-<div class="boxSep" >
-    <div class="imgLiquidFill imgLiquid" style="width:100%; height:250px;">
-        <img alt="" src="https://img.alicdn.com/imgextra/i1/2024462951/TB2wJHWnVXXXXXEXXXXXXXXXXXX-2024462951.jpg"/>
-    </div>
-</div>
+						<button class="btn btn-default" id="reset">重置</button>
+						<button class="btn btn-primary" id="apply">应用</button>
+					</div>
+				</div>
+				<!-- 倒计时模块 -->
+				<div class="panel panel-default" id="magic-count-down" style="display: none">
+						<div class='panel-heading'>倒计时编辑</div>
+						<div calss="panel-body" style="padding;10px;">
+							<div class="middle-page-arrow">
+								<img src="images/arrow.png">
+							</div>
+							<div class="form-horizontal">
+							  <div class="form-group">
+								    <label class="col-sm-3 control-label">设定时间：</label>
+								    <div class="col-sm-8">
+								      <input type="text" class="form-control">
+								 	</div>
+							   </div>
+							   <div class="form-group">
+							   		<label class="control-label col-sm-3">组件时间：</label>
+							   		<div class="col-sm-8">
+							   			<input type="text" class="form-control">
+							   		</div> 
+							   </div>
+							   <div class="form-group">
+							   		<label class="control-label col-sm-3">文字内容：</label>
+							   		<div class="col-sm-8">
+							   			<input type="text" class="form-control">
+							   		</div> 
+							   </div>
+							   <div class="form-group">
+							   		<label class="control-label col-sm-3">文字大小：</label>
+							   		<div class="col-sm-8">
+							   			<input type="text" class="form-control">
+							   		</div> 
+							   </div>
+							   <div class="form-group">
+							   		<label class="control-label col-sm-3">文字颜色：</label>
+							   		<div class="col-sm-8">
+										<div class="input-group">
+							   				<input type="text" class="form-control">
+							   				<span class='input-group-addon'>
+							   						<input class="btn color-btn" type="color">
+							   						<img src="images/color.png">
+							   				</span>
+							   			</div>
+									</div>
+							   </div>
+							   <div class="form-group">
+							   		<label class="control-label col-sm-3">文字位置：</label>
+							   		<div class="col-sm-8" style="line-height:35px;">
+							   			<span class="radio-horizontal">
+							   				<input type="radio" name="fontPosition">  在上方
+							   			</span>
+							   			&nbsp;&nbsp;&nbsp;
+							   			<span class="radio-horizontal">
+							   				<input type="radio" name="fontPosition">  在左方
+							   			</span>
+							   		</div> 
+							   </div>
+							   <div class="form-group">
+							   		<label class="control-label col-sm-3">前颜色：</label>
+							   		<div class="col-sm-8">
+							   			<div class="input-group">
+						   				<input type="text" class="form-control">
+						   				<span class='input-group-addon'>
+						   						<input class="btn color-btn" type="color">
+						   						<img src="images/color.png">
+						   				</span>
+						   			</div>
+							   		</div> 
+							   </div>
+							   <div class="form-group">
+							   		<label class="control-label col-sm-3">背景色：</label>
+							   		<div class="col-sm-8">
+							   			<div class="input-group">
+						   				<input type="text" class="form-control">
+						   				<span class='input-group-addon'>
+						   						<input class="btn color-btn" type="color">
+						   						<img src="images/color.png">
+						   				</span>
+						   			</div>
+							   		</div> 
+							   </div>
+							   <div class="form-group">
+							   		<label class="control-label col-sm-3">背景图片：</label>
+							   		<div class="col-sm-8">
+							   			<div class="input-group">
+						   				<input type="text" class="form-control magic-cube1-img">
+						   				<span class='input-group-addon img-btn'>
+						   						<input class="btn color-btn" type="button">
+						   						<img src="images/picture.png">
+						   				</span>
+						   			</div>
+							   		</div> 
+							   </div>
+							   <div class="form-group">
+							   		<label class="control-label col-sm-3">链接：</label>
+							   		<div class="col-sm-8">
+							   			<div class="input-group">
+							   				<input type="url" class="form-control magic-cube1-link">
+							   				<span class='input-group-addon'>
+							   						<input class="btn color-btn link-btn" type="button">
+							   						<img src="images/link.png">
+							   				</span>
+							   			</div>
+							   		</div> 
+							   </div>
+							   <div class="form-group">
+							   		<label class="control-label col-sm-3">对齐方式：</label>
+							   		<div class="col-sm-8">
+							   			<span class="radio-horizontal" style="line-height:35px;">
+							   				<input type="radio" name="aglinType">  靠左对齐
+							   			</span>
+							   			&nbsp;&nbsp;&nbsp;
+							   			<span class="radio-horizontal">
+							   				<input type="radio" name="aglinType">  居中
+							   			</span>
+							   			&nbsp;&nbsp;&nbsp;
+							   			<span class="radio-horizontal">
+							   				<input type="radio" name="aglinType">  靠右对齐
+							   			</span>
+							   		</div> 
+							   </div>
+							</div>
+						</div>
+					</div>
+					<!-- 点击编辑，出现魔方编辑1 -->
+					<div class="panel panel-default magic-cube1" id="magic-cube1">
+						<div class="panel-heading">魔方编辑1</div>
+						<div class="panel-body" style="padding:8px;">
+							<div class="middle-page-arrow">
+								<img src="images/arrow.png">
+							</div>
+							<div class="edit-content2">
+								<!-- <div class="edit-list2" style="background-color:#E5B9B7">
+									1：1
+								</div>
+								<div class="edit-list2" style="background-color:#D7E3BC">
+									1：1
+								</div>
+								<div class="edit-list2" style="background-color:#CCC1D9">
+									1：1
+								</div>
+								<div class="edit-list2" style="background-color:#B7DDE8">
+									1：1
+								</div> -->
+							</div>
+						</div>
+					</div>
+					<div class="panel panel-default magic-cube1" id="magic-cube2">
+						<div class="panel-heading">单元格</div>
+						<div class="panel-body">
+							<div class="form-horizontal">
+								<div class="form-group">
+								    <label class="col-sm-2 control-label">标题：</label>
+								    <div class="col-sm-9">
+								      <input type="text" class="form-control">
+								 	</div>
+							    </div>
+							    <div class="form-group">
+								    <label class="col-sm-2 control-label">链接：</label>
+								    <div class="col-sm-9">
+								      	<div class="input-group">
+							   				<input type="url" class="form-control magic-cube1-link" >
+							   				<span class='input-group-addon' data-toggle="modal" data-target="#myModal">
+							   						<input class="btn color-btn" type="button">
+							   						<img src="images/link.png">
+							   				</span>
+							   			</div>
+								 	</div>
+							    </div>
+							    <div class="form-group">
+								    <label class="col-sm-2 control-label">图片：</label>
+								    <div class="col-sm-9">
+								      	<div class="input-group">
+							   				<input type="text" class="form-control magic-cube1-img">
+							   				<span class='input-group-addon img-btn'>
+							   						<input class="btn color-btn" type="button">
+							   						<img src="images/picture.png">
+							   				</span>
+							   			</div>
+								 	</div>
+							    </div>
+							</div>
+						</div>
+					</div>
+					<div class="panel panel-default magic-cube1" id="magic-cube3">
+						<div class="panel-heading">边框</div>
+						<div class="panel-body">
+							<div class="form-horizontal">
+							    <div class="form-group">
+								    <label class="col-sm-2 control-label">大小：</label>
+								    <div class="col-sm-9">
+								      	<input type="range" class="form-control" min="1" max="10" data-ng-model="rangeNum">
+								      	{{rangeNum}}
+								 	</div>
+							    </div>
+							    <div class="form-group">
+								    <label class="col-sm-2 control-label">颜色：</label>
+								    <div class="col-sm-9">
+								      	<div class="input-group">
+							   				<input type="text" class="form-control">
+							   				<span class='input-group-addon'>
+							   						<input class="btn color-btn" type="color">
+							   						<img src="images/color.png">
+							   				</span>
+							   			</div>
+								 	</div>
+							    </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			<!-- 右边编辑属性模块 -->
+			<div class="rightPage">
+				<div class="rightPage">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							页面属性
+						</div>
+						<div calss="panel-body" style="padding;10px;">
+							<form class="form-horizontal">
+								<div class="form-group">
+									<label class="control-label col-sm-3">
+										链接：
+									</label>
+									<div class="col-sm-8">
+										<label style="line-height: 33px;">http://www.vancii.com/page/12858</label>
+									</div>
+								</div>
+								<div class="form-group">
+									<label class="control-label col-sm-3">
+										标题：
+									</label>
+									<div class="col-sm-8">
+										<input type="text" placeholder="未命名" class="form-control">
+									</div>
+								</div>
+								<div class="form-group">
+									<label class="control-label col-sm-3">
+										摘要：
+									</label>
+									<div class="col-sm-8">
+										<input type="text" placeholder="未命名" class="form-control">
+									</div>
+								</div>
+								<div class="form-group">
+									<label class="control-label col-sm-3">
+										封面：
+									</label>
+									<div class="col-sm-8">
+										<div class="coverImg col-sm-7">
+											<img src="">
+										</div>
+										<div class="main-upload">
+											<div style="position: relative;top:30px;" class="col-sm-5">
+												<input type="file" style="position:absolute;opacity:0;top:0;left:0;z-index: 99"> 
+												<button class="btn btn-default btn-sm">
+													<span class="glyphicon glyphicon-picture"></span>  上传图片
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<label class="control-label col-sm-3">
+										前景色：
+									</label>
+									<div class="col-sm-8">
+										<div class="input-group">
+							   				<input type="text" class="form-control">
+							   				<span class='input-group-addon'>
+							   						<input class="btn color-btn" type="color">
+							   						<img src="images/color.png">
+							   				</span>
+							   			</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<label class="control-label col-sm-3">
+										背景色：
+									</label>
+									<div class="col-sm-8">
+										<div class="input-group">
+							   				<input type="text" class="form-control">
+							   				<span class='input-group-addon'>
+							   						<input class="btn color-btn" type="color">
+							   						<img src="images/color.png">
+							   				</span>
+							   			</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<label class="control-label col-sm-3">
+										背景图
+									</label>
+									<div class="col-sm-8">
+										<div class="coverImg col-sm-7">
+											<img src="">
+										</div>
+										<div class="main-upload">
+											<div style="position: relative;top:30px;" class="col-sm-5">
+												<input type="file" style="position:absolute;opacity:0;top:0;left:0;z-index: 99"> 
+												<button class="btn btn-default btn-sm">
+													<span class="glyphicon glyphicon-picture"></span>  上传图片
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<label class="control-label col-sm-3">
+										重复背景：
+									</label>
+									<div class="col-sm-8">
+										<div class="htmleaf-content">
+											<section class="model-2">
+											  <div class="checkbox">
+											    <input type="checkbox"/>
+											    <label></label>
+											  </div>
+											</section>
+										</div>
+									</div>
+								</div>
+								<hr />
+								<div class="form-group">
+									<label class="control-label col-sm-3">
+										预览：
+									</label>
+									<div class="col-sm-8">
+										<div class="htmleaf-content">
+											<section class="model-2">
+											<div class="checkbox">
+											    <input type="checkbox"/>
+											    <label></label>
+											</div>
+											<button class="btn btn-default btn-sm">
+												<span class="glyphicon glyphicon-save"></span>保存
+											</button>
+											<button class="btn btn-default btn-sm">
+												<span class="glyphicon glyphicon-share-alt"></span>&nbsp;&nbsp;返回
+											</button>
+											</section>
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="hide-content"></div><!-- 点击+号，遮挡属性编辑模块 -->
+			</div>
+			<!-- 插入链接 弹出框 -->
+			<!-- 模态框（Modal） -->
+			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" 
+			   aria-labelledby="myModalLabel" aria-hidden="true">
+			   <div class="modal-dialog">
+			      <div class="modal-content">
+			         <div class="modal-body">
+			           		<div class="linkModel">
+								<div class="linkModel-header">
+									链接对话框
+								</div>
+								<div class="linkModel-main" style="height:325px;">
+									<ul id="myTab" class="nav nav-tabs">
+									   <li class="active">
+									      <a href="#page" data-toggle="tab">
+									        页面
+									      </a>
+									   </li>
+									   <li><a href="#product" data-toggle="tab">商品</a></li>
+									   <li><a href="#link" data-toggle="tab">链接</a></li>
+									</ul>
+									<div id="myTabContent" class="tab-content">
+										<div class="tab-pane fade in active" id="page">
+											<div class="content-header">
+												<a href="javascript:">全部</a>
+											</div>
+											<ul class="page-ul">
+												<li>
+													<div class="linkSelect">
+														<div class="thumbnail">
+															<div class="">
+																<img src="images/1.jpg">
+															</div>
+															<div class="caption text-center" style="padding:0;">
+																<span class="linkName" title="www.baidu.com">商城1</span>
+															</div>
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="linkSelect">
+														<div class="thumbnail">
+															<div class="">
+																<img src="images/1.jpg">
+															</div>
+															<div class="caption text-center" style="padding:0;">
+																<span class="linkName" title="www.alading.com">商城2</span>
+															</div>
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="linkSelect">
+														<div class="thumbnail">
+															<div class="">
+																<img src="images/1.jpg">
+															</div>
+															<div class="caption text-center" style="padding:0;">
+																<span class="linkName" title="www.baidu3.com">商城3</span>
+															</div>
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="linkSelect">
+														<div class="thumbnail">
+															<div class="">
+																<img src="images/1.jpg">
+															</div>
+															<div class="caption text-center" style="padding:0;">
+																<span class="linkName" title="www.baidu4.com">商城4</span>
+															</div>
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="linkSelect">
+														<div class="thumbnail">
+															<div class="">
+																<img src="images/1.jpg">
+															</div>
+															<div class="caption text-center" style="padding:0;">
+																<span class="linkName" title="www.baidu5.com">商城5</span>
+															</div>
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="linkSelect">
+														<div class="thumbnail">
+															<div class="">
+																<img src="images/1.jpg">
+															</div>
+															<div class="caption text-center" style="padding:0;">
+																<span class="linkName" title="www.baidu6.com">商城6</span>
+															</div>
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="linkSelect">
+														<div class="thumbnail">
+															<div class="">
+																<img src="images/1.jpg">
+															</div>
+															<div class="caption text-center" style="padding:0;">
+																<span class="linkName" title="www.baidu7.com">商城7</span>
+															</div>
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="linkSelect">
+														<div class="thumbnail">
+															<div class="">
+																<img src="images/1.jpg">
+															</div>
+															<div class="caption text-center" style="padding:0;">
+																<span class="linkName" title="www.baidu8.com">商城8</span>
+															</div>
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="linkSelect">
+														<div class="thumbnail">
+															<div class="">
+																<img src="images/1.jpg">
+															</div>
+															<div class="caption text-center" style="padding:0;">
+																<span class="linkName" title="www.baidu9.com">商城9</span>
+															</div>
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="linkSelect">
+														<div class="thumbnail">
+															<div class="">
+																<img src="images/1.jpg">
+															</div>
+															<div class="caption text-center" style="padding:0;">
+																<span class="linkName" title="www.baidu10.com">商城10</span>
+															</div>
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="linkSelect">
+														<div class="thumbnail">
+															<div class="">
+																<img src="images/1.jpg">
+															</div>
+															<div class="caption text-center" style="padding:0;">
+																<span class="linkName" title="www.baidu11.com">商城11</span>
+															</div>
+														</div>
+													</div>
+												</li>
+											</ul>
+									   </div>	
 
-<div class="boxSep" >
-    <div class="imgLiquidNoFill imgLiquid" style="width:100%; height:250px;">
-        <img alt="" src="http://img12.360buyimg.com/vclist/jfs/t2755/315/888648067/24220/aefcdf6d/572aa444Ne1d99217.jpg"/>
-    </div>
-</div>
-
-<div class="boxSep" >
-    <div class="imgLiquidNoFill imgLiquid" style="width:100%; height:250px;">
-        <img alt="" src="http://img30.360buyimg.com/popWaterMark/jfs/t2206/231/2370398141/251879/c0150a59/570634a4Nf4448fcd.jpg"/>
-    </div>
-</div>
-
-<div class="boxSep" >
-    <div class="imgLiquidNoFill imgLiquid" style="width:100%; height:250px;">
-        <img alt="" src="http://img10.360buyimg.com/imgzone/jfs/t2617/43/817264919/459873/94b3b941/57283d1eNe86d63e7.jpg"/>
-    </div>
-</div>
-
-
-   <!--  <div class="wrap">
-            <div class="w-left fl">
-                <div class="breadcrumb">
-                    <span>文件目录</span>
-                    <span class="fr">操作</span>
-                </div>
-                <div class="fr action">
-                    <button class="btn btn-default btn-sm" id="create">增加文件夹</button>
-                    <button class="btn btn-default btn-sm" id="create_sub">增加子目录</button>
-                    <button class="btn btn-default btn-sm" id="rename">修改文件夹</button>
-                    <button class="btn btn-default btn-sm" id="remove">删除文件夹</button>
-                </div>
-                <ul id="tree" class="ztree"></ul>
-            </div>
-            <div class="w-right fl">
-                <ol class="breadcrumb">
-                    <li><a>全部</a></li>
-                </ol>
-                <div class="toolbars" ng-show="view_mode">
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                            新建页面 <span class="caret"></span>
-                        </button>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a class="action">空白页</a></li>
-                            <li><a class="action" title="带导航栏和底部工具栏">默认页</a></li>
-                            <li><a class="action">微信素材页</a></li>
-                        </ul>
-                    </div>
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                            更多... <span class="caret"></span>
-                        </button>
-                        <ul class="dropdown-menu " role="menu">
-                            <li><a class="action">复制到...</a></li>
-                            <li><a class="action">移动到...</a></li>
-                            <li><a class="action">删除页面</a></li>
-                        </ul>
-                    </div>
-                    <div class="input-group" style="float:left;width:50%;margin-right:4px;">
-                        <input type="text" class="string form-control page_id" id="search-page-id" placeholder="页面编号" name="page_id" value="">
-                        <span class="input-group-addon">或</span>
-                        <input type="text" class="string form-control page_title" id="search-page-title" placeholder="名称" name="page_name" value="">
-                      <span class="input-group-btn">
-                        <button class="btn btn-default" >搜索</button>
-                      </span>
-                    </div>
-                </div>
-
-                <div id="tableList" class="table-items"></div>
-                <div class="paginator-box">
-                    <ul class="pagination">
-                        <li class="active"><a title="Current page is 1">1</a></li>
-                        <li><a title="Go to page 2">2</a></li>
-                        <li><a title="Go to next page">&gt;</a></li>
-                        <li><a title="Go to last page">&gt;&gt;</a></li>
-                    </ul>
-                </div>
-            </div>
-
-    </div> -->
-
-<script type="text/javascript" src="/require_ab06f67.js"></script>
-<script type="text/javascript">/*resourcemap*/
-require.config({paths:{
-  "components/jquery/jquery": "/components/jquery/jquery_c090017",
-  "components/comp_underscore/underscore": "/components/comp_underscore/underscore_aedb37c",
-  "components/angular.js/angular": "components/angular.js/angular",
-  "script/imgLiquid-min": "/script/imgLiquid-min",
-  "script/config/base": "/script/config/base_ea4335f",
-  "script/config/urls": "/script/config/urls_110635d",
-  "script/config/config": "/script/config/config_268aaef",
-  "script/service/httpRequest": "/script/service/httpRequest_716d45c",
-  "script/service/service": "/script/service/service_115927f",
-  "script/imgLiquid-min": "/script/imgLiquid-min",
-  
-  "components/zTree/js/jquery.ztree.core": "/components/zTree/js/jquery.ztree.core_003f3b9"
-}});
-
-
-
-
-require(['components/jquery/jquery','script/imgLiquid-min','components/comp_underscore/underscore'], function($, _) {
-	
-	$(function(){
-        require(['components/bootstrap/dist/js/bootstrap.min']);
-       
-    });
-
-     $(".imgLiquidFill").imgLiquid({
-        fill: false,
-        horizontalAlign: "center",
-        verticalAlign: "center"
-    });
-    
-    $(".imgLiquidNoFill").imgLiquid({
-        fill: false,
-        horizontalAlign: "center",
-        verticalAlign: "50%"
-    });
-
-    /* var zTree;
-    var setting = {
-        view: {
-            dblClickExpand: false,
-            showLine: true,
-            selectedMulti: false
-        },
-        data: {
-            simpleData: {
-                enable:true,
-                idKey: "id",
-                pIdKey: "pId",
-                rootPId: ""
-            }
-        },
-        callback: {
-            beforeClick: function(treeId, treeNode) {
-                var zTree = $.fn.zTree.getZTreeObj("tree");
-                if (treeNode.isParent) {
-                    zTree.expandNode(treeNode);
-                    return false;
-                } else {
-                    // demoIframe.attr("src", treeNode.file + ".html");
-                    return true;
-                }
-            }
-        }
-    };
-
-    var t = $("#tree");
-
-    require(['script/service/service', 'components/zTree/js/jquery.ztree.core'], function(cService) {
-
-        // 请求子节点
-        cService.getSubnodes().then(function(data){
-
-            t = $.fn.zTree.init(t, setting, data.folders);
-            zTree = $.fn.zTree.getZTreeObj("tree");
-
-        });
-
-        cService.getEnter().then(function(data){
-            var template = function(obj){
-var __t,__p='',__j=Array.prototype.join,print=function(){__p+=__j.call(arguments,'');};
-with(obj||{}){
-__p+='<table class="table table-striped">\n    <thead>\n    <tr>\n        <th></th>\n        <th>页面编号</th>\n        <th>名称</th>\n        <th>最后更新时间</th>\n        <th>类型</th>\n        <th>修改人</th>\n        <th>操作</th>\n    </tr>\n    </thead>\n    <tbody class="page-table">\n\n    ';
- _.each(obj, function(item) { 
-__p+='\n    <tr class="ng-scope">\n        <td><input class="select-box" type="checkbox"></td>\n        <td class="ng-binding">'+
-((__t=( item.id ))==null?'':__t)+
-'</td>\n        <td>\n            <div class="title" title="'+
-((__t=( item.title ))==null?'':__t)+
-'" >\n                <span >'+
-((__t=( item.name ))==null?'':__t)+
-'</span>\n            </div>\n            <!--input class="form-control ng-pristine ng-valid ng-hide" -->\n        </td>\n        <td class="ng-binding">'+
-((__t=( item.created_at.split('.')[0] ))==null?'':__t)+
-'</td>\n        <td class="ng-binding">'+
-((__t=( item.page_type ))==null?'':__t)+
-'</td>\n        <td class="ng-binding">'+
-((__t=( item.name ))==null?'':__t)+
-'</td>\n        <td>\n            <a href="#" ng-click="edit_page()" class="btn btn-default btn-xs">编辑</a>\n            <a href="#"></a>\n        </td>\n    </tr>\n    ';
- }) 
-__p+='\n\n\n    </tbody>\n</table>';
-}
-return __p;
-};
-            //$('#tableList').html(template(data.pages));
-        });
-    }); */ 
-
-    
-});
-</script>
-</body>
+									   <div class="tab-pane fade" id="product">
+									      <ul class="product-ul">
+												<li>
+													<div class="linkSelect">
+														<div class="thumbnail">
+															<div class="">
+																<img src="images/2.png">
+															</div>
+															<div class="caption text-center" style="padding:0;">
+																<span class="linkName">主分类</span>
+															</div>
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="linkSelect">
+														<div class="thumbnail">
+															<div class="">
+																<img src="images/2.png">
+															</div>
+															<div class="caption text-center" style="padding:0;">
+																<span class="linkName">啊彪测试</span>
+															</div>
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="linkSelect">
+														<div class="thumbnail">
+															<div class="">
+																<img src="images/2.png">
+															</div>
+															<div class="caption text-center" style="padding:0;">
+																<span class="linkName">未命名</span>
+															</div>
+														</div>
+													</div>
+												</li>
+											</ul>
+									   </div>
+									   <div class="tab-pane fade" id="link">
+									      <ul class="link-ul">
+												<li>
+													<div class="linkSelect">
+														<div class="thumbnail">
+															<div class="">
+																<img src="images/2.png">
+															</div>
+															<div class="caption text-center" style="padding:0;">
+																<span class="linkName">商城主页</span>
+															</div>
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="linkSelect">
+														<div class="thumbnail">
+															<div class="">
+																<img src="images/2.png">
+															</div>
+															<div class="caption text-center" style="padding:0;">
+																<span class="linkName">个人中心</span>
+															</div>
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="linkSelect">
+														<div class="thumbnail">
+															<div class="">
+																<img src="images/2.png">
+															</div>
+															<div class="caption text-center" style="padding:0;">
+																<span class="linkName">我的订单</span>
+															</div>
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="linkSelect">
+														<div class="thumbnail">
+															<div class="">
+																<img src="images/2.png">
+															</div>
+															<div class="caption text-center" style="padding:0;">
+																<span class="linkName">购物车</span>
+															</div>
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="linkSelect">
+														<div class="thumbnail">
+															<div class="">
+																<img src="images/2.png">
+															</div>
+															<div class="caption text-center" style="padding:0;">
+																<span class="linkName">商品分类</span>
+															</div>
+														</div>
+													</div>
+												</li>
+											</ul>
+									   </div>
+								</div>
+							</div>
+					         <div class="modal-footer">
+					            <button type="button" class="btn btn-default" 
+					               data-dismiss="modal">取消
+					            </button>
+					            <button type="button" class="btn btn-primary" id="sureLink" data-dismiss="">
+					               提交更改
+					            </button>
+					         </div>
+					      </div><!-- /.modal-content -->
+					</div><!-- /.modal -->
+				<hr>
+			</div>
+			</div>
+			<!-- 插入图片弹出框 -->
+			<div class="pictureModel">
+				<div class="pictureModel-title">
+					图片库
+				</div>
+				<div class="pictureModel-header">
+					<button class="btn btn-default"><span class="glyphicon glyphicon-cloud-upload"></span>&nbsp;上传图片</button>
+					<button class="btn btn-default" id="addDocument">新建文件夹</button>
+					<div class="btn-group">
+					   <button type="button" class="btn btn-default dropdown-toggle" 
+					      data-toggle="dropdown">
+					      更多... <span class="caret"></span>
+					   </button>
+					   <ul class="dropdown-menu" role="menu">
+					      <li><a href="javascript:">移动到..</a></li>
+					      <li><a href="javascript:" id="deleteImg">删除</a></li>
+					   </ul>
+					</div>	
+				</div>
+				<div class="panel panel-default pictureModel-main">
+					<div class="panel-heading">全部<span id="docName"></span></div>
+					<div class="panel-body" style="padding:0">
+						<div class="pictureModel-body">
+							<ul id="document-main">
+								
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- 图片弹出框尾部按钮 -->
+				<div class="pictureModel-footer pull-right">
+					<button class="btn btn-default" id="closeImg">取消</button>
+					<button class="btn btn-primary" id="saveImg">插入图片</button>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<img src="images/footer.png">
+		</div>
+	</body>
+	<script>
+  $(function() {
+    $( "#selectable" ).selectable();
+  });
+  </script>
 </html>

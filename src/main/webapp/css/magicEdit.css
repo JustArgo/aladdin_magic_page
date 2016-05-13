@@ -1,0 +1,84 @@
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+ min-height: 1px;padding-left: 5px;padding-right: 5px;position: relative;}
+body a:focus{ outline: none; -webkit-outline:none;}
+a:hover{text-decoration: none}
+/* .leftPage{background: url("../images/phone.png");background-size:100% 100%;} */
+.container{width:1300px;margin-top:40px;height:1000px;}
+.leftPage img{position:absolute;top:0;left:5px;z-index: 1;}
+.phone-content{width:340px;height:610px;background-color:$fff;margin-left:10px;z-index:99;position: relative;border:1px solid;}
+.col-lg-4{width:390px;height:700px;z-index: 99;}
+.col-sm-3{width:100px;}
+.col-sm-8{width:250px;}
+.middlePage{margin-top:100px;}
+.panel{z-index: 99;position: relative;}
+/*小箭头*/
+.arrows{width:20px;height:20px;background-color:#eee;position:absolute;
+z-index:1;top:60px;left:-5px;
+-webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);-o-transform:rotate(45deg);transform:rotate(45deg);
+}
+/*页面属性*/
+.rightPage{width:400px;float:left;margin-left:40px;position:relative;}
+.hide-content{display:none;width:400px;height:100%;position: absolute;top:0;left:40px;background:rgba(0,0,0,0.3);z-index: 99;border-radius:4px;}
+.coverImg{width:60px;height:60px;border:1px solid #cecece;}
+.checkbox {position: relative;display: inline-block;}
+.checkbox label {width: 60px;height: 25px;background: #ccc;position: relative;display: inline-block;border-radius: 46px;-webkit-transition: 0.4s;transition: 0.4s; margin-left:-20px;}
+.checkbox label:after {content: '';position: absolute;width: 50px;height: 50px;border-radius: 100%;left: 0;top: -5px;z-index: 2; background: #fff; box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); -webkit-transition: 0.4s; transition: 0.4s;}
+.checkbox input{position: absolute;left: 0;top: 0;width: 100%;height: 100%;z-index: 5;opacity: 0;cursor: pointer;}
+.checkbox input:hover + label:after { box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.2), 0 3px 8px 0 rgba(0, 0, 0, 0.15);}
+.checkbox input:checked + label:after {left: 40px;}
+.model-2 .checkbox label {width: 45px;}
+.model-2 .checkbox label:after {top: 0; width: 25px; height: 25px;}
+.model-2 .checkbox input:checked + label { background: #4BD865;}
+.model-2 .checkbox input:checked + label:after {left: 22px;}
+.rightPage:hover .hide-content{z-index: 1;}
+/* 魔方编辑 */
+.left-page{ width:410px; height:800px;background:url('../images/phone.png');background-size:100% 100%;float:left}
+.left-page-screen{ width:375px; height:560px; background-color:#cecece;margin-left:19px;margin-top:120px;overflow: auto;padding-bottom:30px;}
+.screen-header{ width:100%; height:60px;text-align: center;}
+.screen-header a{display:block;width:100%;height:100%;text-decoration: none;}
+.middle-page{width:300px;height:400px;float:left; margin-left:30px; margin-top:50px;position: relative;display: none;}
+.middle-page-arrow{ position:absolute;left:-13px;}
+.middle-page-table tr td:first-child{width:80px;text-align: right;}
+.middle-page-sudoku{width:270px;height:240px;margin-top:20px;}
+#reset{margin-left:120px;margin-top:20px;}
+#apply{margin-top:20px;}
+.sudoku-number{line-height: 80px;text-align: center;font-size:20px;float: left;border:1px solid #cecece;}
+.sudoku-number span{width:100%;height:100%;display:block;color:#666;}
+.sudoku-number:hover{border:1px solid #cecece;}
+.click img{position:relative; top:10px;}
+#magic-cube{display:none;position:relative;z-index: 999;}
+#edit{border-bottom:1px solid #000}
+
+
+/*  魔方编辑1 */
+.edit-cube{width:100%;height:50px;background:rgba(0,0,0,0.67);display: none;}
+.edit-content{width:96%;margin-left:2%;margin-top:60px;float:left;}
+.edit-content:hover .edit-cube{display:block;}
+.edit-list{float:left;margin-top:5px;border:1px solid;z-index: 999;margin-left:5px;}
+.edit-list img{width:100%;height:100%;}
+.edit-content2{width:320px;float:left;}
+.edit-list2{margin-left:5px;border:1px solid #cecece;float:left;margin-top:5px;text-align: center;color:#fff;text-shadow: 1px 1px 2px #000;}
+.edit-list2:hover{border:1px solid red;}
+.edit-list2 img{width:100%;height:100%;}
+.border{border:1px solid red;}
+.input-group-addon{position:relative;padding:0;}
+.input-group-addon img{}
+.color-btn{position:absolute;top:0;left:0;opacity:0}
+/* 添加组件界面 */
+.middle-page-module{width:100%;}
+.module-list button{width:80px;height:40px;margin-top:5px;}
+
+/* 倒计时 */
+.magic-count-down{display:none;}
+
+/* 点击编辑按钮，魔方编辑1 */
+.magic-cube1{display: none;}
+
+	
+
+  #selectable .ui-selecting { background: #FECA40; }
+  #selectable .ui-selected { background: #F39814; color: white; }
+  #selectable { list-style-type: none; margin: 0; padding: 0;}
+  #selectable li {float: left;text-align: center; }
+
+.control-label{width:25%;}
