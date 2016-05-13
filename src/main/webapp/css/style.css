@@ -1,0 +1,126 @@
+html body {
+  color: #555555;
+}
+a:hover,
+a:focus {
+  color: #157ab5;
+  text-decoration: underline;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.wrap {
+  width: 1200px;
+  margin: 0 auto;
+}
+.w-left {
+  width: 30%;
+  height: 680px;
+  border: 1px solid #dddddd;
+}
+.w-right {
+  width: 70%;
+  height: 680px;
+  border: 1px solid #dddddd;
+  border-left: none;
+}
+.wrap .row {
+  padding: 0;
+}
+.wrap .row .col {
+  padding: 0;
+}
+.w-left .ztree {
+  margin-right: 106px;
+}
+.w-left .action {
+  width: 96px;
+  margin-right: 10px;
+}
+.btn.btn-default {
+  background-color: white;
+  margin-bottom: 4px;
+  border: 1px solid #dddddd;
+}
+.btn.btn-default:hover {
+  background-color: #f4f4f4;
+}
+.breadcrumb {
+  padding: 8px 15px;
+  margin-bottom: 10px;
+  list-style: none;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+}
+.page #meta-box {
+  border-left: 1px solid #ddd;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: white;
+  opacity: .2;
+}
+.page #meta-box.active {
+  opacity: 1;
+}
+.page #page-editor .preview-box {
+  width: 365px;
+  height: 792px;
+  float: left;
+  background: url("/images/phone.png") no-repeat;
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.toolbars {
+  padding: 0 0 0 10px;
+}
+.toolbars .btn-default {
+  margin-bottom: 0;
+}
+.toolbars menu > li > a:focus {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #2fa4e7;
+}
+.toolbars .dropdown-menu > li > a {
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  font-weight: normal;
+  line-height: 1.42857143;
+  color: #333333;
+  white-space: nowrap;
+}
+.toolbars .dropdown-menu > li > a:hover {
+  background: #2987ed;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+.table-items {
+  height: 525px;
+  overflow-y: auto;
+}
+.table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+.table th,
+.table td {
+  padding: 8px;
+}
+.table th .btn.btn-default,
+.table td .btn.btn-default {
+  margin-bottom: 0;
+}
+.paginator-box {
+  text-align: right;
+  margin: 10px 10px 0 0;
+}

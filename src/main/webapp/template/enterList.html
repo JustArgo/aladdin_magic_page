@@ -1,0 +1,23 @@
+function(obj){
+var __t,__p='',__j=Array.prototype.join,print=function(){__p+=__j.call(arguments,'');};
+with(obj||{}){
+__p+='<table class="table table-striped">\n    <thead>\n    <tr>\n        <th></th>\n        <th>页面编号</th>\n        <th>名称</th>\n        <th>最后更新时间</th>\n        <th>类型</th>\n        <th>修改人</th>\n        <th>操作</th>\n    </tr>\n    </thead>\n    <tbody class="page-table">\n\n    ';
+ _.each(obj, function(item) { 
+__p+='\n    <tr class="ng-scope">\n        <td><input class="select-box" type="checkbox"></td>\n        <td class="ng-binding">'+
+((__t=( item.id ))==null?'':__t)+
+'</td>\n        <td>\n            <div class="title" title="'+
+((__t=( item.title ))==null?'':__t)+
+'" >\n                <span >'+
+((__t=( item.name ))==null?'':__t)+
+'</span>\n            </div>\n            <!--input class="form-control ng-pristine ng-valid ng-hide" -->\n        </td>\n        <td class="ng-binding">'+
+((__t=( item.created_at.split('.')[0] ))==null?'':__t)+
+'</td>\n        <td class="ng-binding">'+
+((__t=( item.page_type ))==null?'':__t)+
+'</td>\n        <td class="ng-binding">'+
+((__t=( item.name ))==null?'':__t)+
+'</td>\n        <td>\n            <a href="#" ng-click="edit_page()" class="btn btn-default btn-xs">编辑</a>\n            <a href="#"></a>\n        </td>\n    </tr>\n    ';
+ }) 
+__p+='\n\n\n    </tbody>\n</table>';
+}
+return __p;
+}

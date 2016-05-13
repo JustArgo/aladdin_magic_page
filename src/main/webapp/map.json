@@ -1,0 +1,116 @@
+{
+    "res": {
+        "components/jquery-ui/themes/base/core.css": {
+            "uri": "/components/jquery-ui/themes/base/core_7c802ba.css",
+            "type": "css"
+        },
+        "components/jquery-ui/themes/base/tabs.css": {
+            "uri": "/components/jquery-ui/themes/base/tabs_5a3d581.css",
+            "type": "css"
+        },
+        "components/jquery-ui/themes/base/datepicker.css": {
+            "uri": "/components/jquery-ui/themes/base/datepicker_77106fb.css",
+            "type": "css"
+        },
+        "components/jquery-ui/themes/base/theme.css": {
+            "uri": "/components/jquery-ui/themes/base/theme_0fb1364.css",
+            "type": "css"
+        },
+        "components/bootstrap/dist/css/bootstrap.min.css": {
+            "uri": "/components/bootstrap/dist/css/bootstrap.min_8bf70a2.css",
+            "type": "css"
+        },
+        "components/zTree/css/zTreeStyle/zTreeStyle.css": {
+            "uri": "/components/zTree/css/zTreeStyle/zTreeStyle_284f5b4.css",
+            "type": "css"
+        },
+        "css/style.less": {
+            "uri": "/css/style.css",
+            "type": "css"
+        },
+        "require.js": {
+            "uri": "/require_ab06f67.js",
+            "type": "js"
+        },
+        "components/jquery/jquery.js": {
+            "uri": "/components/jquery/jquery_c090017.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery/jquery"
+            }
+        },
+        "components/comp_underscore/underscore.js": {
+            "uri": "/components/comp_underscore/underscore_aedb37c.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/comp_underscore/underscore"
+            }
+        },
+        "components/bootstrap/dist/js/bootstrap.min.js": {
+            "uri": "/components/bootstrap/dist/js/bootstrap.min_b4c8df8.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/bootstrap/dist/js/bootstrap.min"
+            }
+        },
+        "script/service/service.js": {
+            "uri": "/script/service/service_115927f.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "script/service/service"
+            },
+            "deps": [
+                "components/jquery/jquery.js",
+                "script/service/httpRequest.js"
+            ]
+        },
+        "script/service/httpRequest.js": {
+            "uri": "/script/service/httpRequest_716d45c.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "script/service/httpRequest"
+            },
+            "deps": [
+                "script/config/config.js",
+                "components/jquery/jquery.js"
+            ]
+        },
+        "script/config/config.js": {
+            "uri": "/script/config/config_268aaef.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "script/config/config"
+            },
+            "deps": [
+                "script/config/base.js",
+                "script/config/urls.js"
+            ]
+        },
+        "script/config/base.js": {
+            "uri": "/script/config/base_ea4335f.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "script/config/base"
+            }
+        },
+        "script/config/urls.js": {
+            "uri": "/script/config/urls_110635d.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "script/config/urls"
+            },
+            "deps": [
+                "components/jquery/jquery.js",
+                "script/config/base.js"
+            ]
+        },
+        "components/zTree/js/jquery.ztree.core.js": {
+            "uri": "/components/zTree/js/jquery.ztree.core_003f3b9.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/zTree/js/jquery.ztree.core"
+            }
+        }
+    },
+    "pkg": {}
+}

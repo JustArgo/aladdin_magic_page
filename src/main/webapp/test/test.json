@@ -1,0 +1,1174 @@
+{
+  "resultFlag": 1,
+  "resultMsg": "成功",
+  "data": [
+    {
+      "cityName": "阿克苏",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4800001",
+      "hotelCityCode": "CH843000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Akesu"
+    },
+    {
+      "cityName": "阿勒泰",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4810002",
+      "hotelCityCode": "CH836500",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Aletai"
+    },
+    {
+      "cityName": "安康",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4820004",
+      "hotelCityCode": "CH725000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Ankan"
+    },
+    {
+      "cityName": "安庆",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4840005",
+      "hotelCityCode": "CH246000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Anqing"
+    },
+    {
+      "cityName": "安顺",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4840006",
+      "hotelCityCode": "CH561000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Anshun"
+    },
+    {
+      "cityName": "鞍山",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4850007",
+      "hotelCityCode": "CH114000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Anshan"
+    },
+    {
+      "cityName": "百色",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4870009",
+      "hotelCityCode": "CH533000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Baise"
+    },
+    {
+      "cityName": "蚌埠",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e487000a",
+      "hotelCityCode": "CH233000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Bengbu"
+    },
+    {
+      "cityName": "包头",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e488000b",
+      "hotelCityCode": "CH014000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Baotou"
+    },
+    {
+      "cityName": "保山",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e489000c",
+      "hotelCityCode": "CH678000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Baoshan"
+    },
+    {
+      "cityName": "北海",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e489000d",
+      "hotelCityCode": "CH536000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Beihai"
+    },
+    {
+      "cityName": "北京",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e48a000e",
+      "hotelCityCode": "CH100000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Beijing"
+    },
+    {
+      "cityName": "博乐",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e48e0011",
+      "hotelCityCode": "CH833400",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "BoLe"
+    },
+    {
+      "cityName": "长春",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4900014",
+      "hotelCityCode": "CH130000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Changchun"
+    },
+    {
+      "cityName": "长沙",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4900015",
+      "hotelCityCode": "CH410000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Changsha"
+    },
+    {
+      "cityName": "长治",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4910016",
+      "hotelCityCode": "CH046000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Changzhi"
+    },
+    {
+      "cityName": "常德",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4920017",
+      "hotelCityCode": "CH415000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Changde"
+    },
+    {
+      "cityName": "常州",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4920018",
+      "hotelCityCode": "CH213000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Changzhou"
+    },
+    {
+      "cityName": "朝阳",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4930019",
+      "hotelCityCode": "CH122000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Chaoyang"
+    },
+    {
+      "cityName": "成都",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e493001a",
+      "hotelCityCode": "CH610000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Chengdu"
+    },
+    {
+      "cityName": "赤峰",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e494001b",
+      "hotelCityCode": "CH024000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Chifeng"
+    },
+    {
+      "cityName": "达县",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e495001c",
+      "hotelCityCode": "CH635000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Daxian"
+    },
+    {
+      "cityName": "大理",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e495001d",
+      "hotelCityCode": "CH671000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Dali"
+    },
+    {
+      "cityName": "大连",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e496001e",
+      "hotelCityCode": "CH116000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Dalian"
+    },
+    {
+      "cityName": "大庆",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e496001f",
+      "hotelCityCode": "CH163000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Daqing"
+    },
+    {
+      "cityName": "大同",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4970020",
+      "hotelCityCode": "CH037000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Datong"
+    },
+    {
+      "cityName": "丹东",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4970021",
+      "hotelCityCode": "CH118000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Dandong"
+    },
+    {
+      "cityName": "东营",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4990024",
+      "hotelCityCode": "CH257000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Dongying"
+    },
+    {
+      "cityName": "敦煌",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e49a0025",
+      "hotelCityCode": "CH736200",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Dunhuang"
+    },
+    {
+      "cityName": "恩施",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e49b0027",
+      "hotelCityCode": "CH445000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Enshi"
+    },
+    {
+      "cityName": "佛山",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e49c0029",
+      "hotelCityCode": "CH528000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Foshan"
+    },
+    {
+      "cityName": "福州",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e49c002a",
+      "hotelCityCode": "CH350000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Fuzhou"
+    },
+    {
+      "cityName": "阜阳",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e49d002b",
+      "hotelCityCode": "CH236000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Fuyang"
+    },
+    {
+      "cityName": "赣州",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e49e002d",
+      "hotelCityCode": "CH341000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Ganzhou"
+    },
+    {
+      "cityName": "格尔木",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e49f002e",
+      "hotelCityCode": "CH816000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Geermu"
+    },
+    {
+      "cityName": "广元",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4a10032",
+      "hotelCityCode": "CH628000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Guangyuan"
+    },
+    {
+      "cityName": "广州",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4a20033",
+      "hotelCityCode": "CH510000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Guangzhou"
+    },
+    {
+      "cityName": "贵阳",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4a20034",
+      "hotelCityCode": "CH550000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Guiyang"
+    },
+    {
+      "cityName": "桂林",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4a30035",
+      "hotelCityCode": "CH541000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Guilin"
+    },
+    {
+      "cityName": "哈尔滨",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4a40036",
+      "hotelCityCode": "CH150000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Haerbing"
+    },
+    {
+      "cityName": "哈密",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4a50037",
+      "hotelCityCode": "CH839000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Hami"
+    },
+    {
+      "cityName": "海口",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4a60038",
+      "hotelCityCode": "CH570000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Haikou"
+    },
+    {
+      "cityName": "海拉尔",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4a60039",
+      "hotelCityCode": "CH021000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Hailaer"
+    },
+    {
+      "cityName": "邯郸",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4a7003a",
+      "hotelCityCode": "CH056000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Handan"
+    },
+    {
+      "cityName": "汉中",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4a8003b",
+      "hotelCityCode": "CH723000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Hanzhong"
+    },
+    {
+      "cityName": "杭州",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4a9003c",
+      "hotelCityCode": "CH310000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Hangzhou"
+    },
+    {
+      "cityName": "合肥",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4a9003d",
+      "hotelCityCode": "CH230000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Hefei"
+    },
+    {
+      "cityName": "和田",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4aa003e",
+      "hotelCityCode": "CH848000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Hetian"
+    },
+    {
+      "cityName": "黑河",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4aa003f",
+      "hotelCityCode": "CH164300",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Heihe"
+    },
+    {
+      "cityName": "衡阳",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4ab0040",
+      "hotelCityCode": "CH421000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Hengyang"
+    },
+    {
+      "cityName": "淮安",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4ac0043",
+      "hotelCityCode": "CH223200",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "HuaiAn"
+    },
+    {
+      "cityName": "黄山",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4ad0044",
+      "hotelCityCode": "CH245000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Huangshan"
+    },
+    {
+      "cityName": "鸡西",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4ae0046",
+      "hotelCityCode": "CH158100",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "JiXi"
+    },
+    {
+      "cityName": "吉林",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4af0047",
+      "hotelCityCode": "CH132000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Jilin"
+    },
+    {
+      "cityName": "济南",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4af0048",
+      "hotelCityCode": "CH250000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Jinan"
+    },
+    {
+      "cityName": "济宁",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4b00049",
+      "hotelCityCode": "CH272100",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Jining"
+    },
+    {
+      "cityName": "佳木斯",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4b1004b",
+      "hotelCityCode": "CH154000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Jiamusi"
+    },
+    {
+      "cityName": "嘉峪关",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4b1004c",
+      "hotelCityCode": "CH735100",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Jiayuguan"
+    },
+    {
+      "cityName": "金昌",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4b2004d",
+      "hotelCityCode": "CH737100",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Jinchang"
+    },
+    {
+      "cityName": "锦州",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4b2004e",
+      "hotelCityCode": "CH121000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Jingzhou"
+    },
+    {
+      "cityName": "井冈山",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4b30050",
+      "hotelCityCode": "CH343600",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Jingangshan"
+    },
+    {
+      "cityName": "景德镇",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4b40051",
+      "hotelCityCode": "CH333000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Jingdezheng"
+    },
+    {
+      "cityName": "九江",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4b50053",
+      "hotelCityCode": "CH332000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Jiujiang"
+    },
+    {
+      "cityName": "酒泉",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4b60055",
+      "hotelCityCode": "CH735000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Jiuquan"
+    },
+    {
+      "cityName": "喀什",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4b70056",
+      "hotelCityCode": "CH844000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Kashi"
+    },
+    {
+      "cityName": "克拉玛依",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4b80058",
+      "hotelCityCode": "CH834000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Kelamayi"
+    },
+    {
+      "cityName": "库尔勒",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4b9005a",
+      "hotelCityCode": "CH841000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Luerle"
+    },
+    {
+      "cityName": "昆明",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4b9005b",
+      "hotelCityCode": "CH650000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Kunming"
+    },
+    {
+      "cityName": "拉萨",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4ba005c",
+      "hotelCityCode": "CH850000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Lasa"
+    },
+    {
+      "cityName": "兰州",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4ba005d",
+      "hotelCityCode": "CH730000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Lanzhou"
+    },
+    {
+      "cityName": "连云港",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4bd0062",
+      "hotelCityCode": "CH222000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Lianyungang"
+    },
+    {
+      "cityName": "临沂",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4bf0067",
+      "hotelCityCode": "CH276000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Linyi"
+    },
+    {
+      "cityName": "柳州",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4c10069",
+      "hotelCityCode": "CH545000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Liuzhou"
+    },
+    {
+      "cityName": "泸州",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4c2006a",
+      "hotelCityCode": "CH646000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Luzhou"
+    },
+    {
+      "cityName": "洛阳",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4c2006b",
+      "hotelCityCode": "CH471000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Luoyang"
+    },
+    {
+      "cityName": "满洲里",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4c3006c",
+      "hotelCityCode": "CH021400",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Manzhouli"
+    },
+    {
+      "cityName": "绵阳",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4c4006e",
+      "hotelCityCode": "CH621000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Mianyang"
+    },
+    {
+      "cityName": "牡丹江",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4c50070",
+      "hotelCityCode": "CH157000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Mudanjiang"
+    },
+    {
+      "cityName": "南昌",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4c60072",
+      "hotelCityCode": "CH330000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Nanchang"
+    },
+    {
+      "cityName": "南充",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4c70073",
+      "hotelCityCode": "CH637000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Nanchong"
+    },
+    {
+      "cityName": "南京",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4c70074",
+      "hotelCityCode": "CH210000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Nanjing"
+    },
+    {
+      "cityName": "南宁",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4c80075",
+      "hotelCityCode": "CH530000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Nanning"
+    },
+    {
+      "cityName": "南通",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4c80076",
+      "hotelCityCode": "CH226000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Nantong"
+    },
+    {
+      "cityName": "南阳",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4c90077",
+      "hotelCityCode": "CH473000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Nanyang"
+    },
+    {
+      "cityName": "宁波",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4c90078",
+      "hotelCityCode": "CH315000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Ningbo"
+    },
+    {
+      "cityName": "攀枝花",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4ca0079",
+      "hotelCityCode": "CH617000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Panzhihua"
+    },
+    {
+      "cityName": "齐齐哈尔",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4cb007a",
+      "hotelCityCode": "CH161000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Qiqihaer"
+    },
+    {
+      "cityName": "秦皇岛",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4cd007d",
+      "hotelCityCode": "CH066000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Qinhuangdao"
+    },
+    {
+      "cityName": "青岛",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4ce007e",
+      "hotelCityCode": "CH266000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Qingdao"
+    },
+    {
+      "cityName": "衢州",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4cf0080",
+      "hotelCityCode": "CH324000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Quzhou"
+    },
+    {
+      "cityName": "三亚",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4d00082",
+      "hotelCityCode": "CH572000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Sanya"
+    },
+    {
+      "cityName": "沙市",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4d00083",
+      "hotelCityCode": "CH434000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Shashi"
+    },
+    {
+      "cityName": "上海",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4d10085",
+      "hotelCityCode": "CH200000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "ShangHai"
+    },
+    {
+      "cityName": "韶关",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4d30088",
+      "hotelCityCode": "CH512000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Shaoguan"
+    },
+    {
+      "cityName": "深圳",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4d30089",
+      "hotelCityCode": "CH518000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Shenzhen"
+    },
+    {
+      "cityName": "沈阳",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4d4008a",
+      "hotelCityCode": "CH110000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Shenyang"
+    },
+    {
+      "cityName": "石家庄",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4d5008b",
+      "hotelCityCode": "CH050000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Shijiazhuang"
+    },
+    {
+      "cityName": "苏州",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4d6008d",
+      "hotelCityCode": "CH215000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Suzhou"
+    },
+    {
+      "cityName": "塔城",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4d6008e",
+      "hotelCityCode": "CH834700",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Tacheng"
+    },
+    {
+      "cityName": "太原",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4d7008f",
+      "hotelCityCode": "CH030000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Taiyuan"
+    },
+    {
+      "cityName": "唐山",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4d70090",
+      "hotelCityCode": "CH063000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Tangshan"
+    },
+    {
+      "cityName": "天津",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4d80092",
+      "hotelCityCode": "CH300000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Tianjin"
+    },
+    {
+      "cityName": "天水",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4d90093",
+      "hotelCityCode": "CH741000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "TianShui"
+    },
+    {
+      "cityName": "通化",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4d90094",
+      "hotelCityCode": "CH134000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Tonghua"
+    },
+    {
+      "cityName": "通辽",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4da0095",
+      "hotelCityCode": "CH028000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Tongliao"
+    },
+    {
+      "cityName": "铜仁",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4da0096",
+      "hotelCityCode": "CH554300",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Tongren"
+    },
+    {
+      "cityName": "威海",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4db0098",
+      "hotelCityCode": "CH264200",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Weihai"
+    },
+    {
+      "cityName": "潍坊",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4dc0099",
+      "hotelCityCode": "CH261000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Weifang"
+    },
+    {
+      "cityName": "温州",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4dc009a",
+      "hotelCityCode": "CH325000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "wenzhou"
+    },
+    {
+      "cityName": "乌海",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4dd009c",
+      "hotelCityCode": "CH016000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Wuhai"
+    },
+    {
+      "cityName": "乌兰浩特",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4de009d",
+      "hotelCityCode": "CH137400",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Wulanhaote"
+    },
+    {
+      "cityName": "乌鲁木齐",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4df009e",
+      "hotelCityCode": "CH830000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Wulumuqi"
+    },
+    {
+      "cityName": "无锡",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4df009f",
+      "hotelCityCode": "CH214000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Wuxi"
+    },
+    {
+      "cityName": "梧州",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4e000a0",
+      "hotelCityCode": "CH543000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Wuzhou"
+    },
+    {
+      "cityName": "武汉",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4e000a1",
+      "hotelCityCode": "CH430000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Wuhan"
+    },
+    {
+      "cityName": "西安",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4e100a3",
+      "hotelCityCode": "CH710000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Xian"
+    },
+    {
+      "cityName": "西昌",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4e200a4",
+      "hotelCityCode": "CH615000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Xichang"
+    },
+    {
+      "cityName": "西宁",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4e300a5",
+      "hotelCityCode": "CH810000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Xining"
+    },
+    {
+      "cityName": "锡林浩特",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4e300a6",
+      "hotelCityCode": "CH026000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Xilinhaote"
+    },
+    {
+      "cityName": "厦门",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4e400a7",
+      "hotelCityCode": "CH361000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Xiamen"
+    },
+    {
+      "cityName": "襄樊",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4e500a8",
+      "hotelCityCode": "CH441000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Xiangfan"
+    },
+    {
+      "cityName": "兴义",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4e500a9",
+      "hotelCityCode": "CH562400",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Xingyi"
+    },
+    {
+      "cityName": "徐州",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4e600aa",
+      "hotelCityCode": "CH221000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Xuzhou"
+    },
+    {
+      "cityName": "烟台",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4e700ab",
+      "hotelCityCode": "CH264000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Yantai"
+    },
+    {
+      "cityName": "延安",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4e700ac",
+      "hotelCityCode": "CH716000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Yanan"
+    },
+    {
+      "cityName": "延吉",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4e800ad",
+      "hotelCityCode": "CH133000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Yanji"
+    },
+    {
+      "cityName": "盐城",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4e900ae",
+      "hotelCityCode": "CH224000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Yancheng"
+    },
+    {
+      "cityName": "扬州",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4ea00af",
+      "hotelCityCode": "CH225000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Yangzhou"
+    },
+    {
+      "cityName": "伊春",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4eb00b0",
+      "hotelCityCode": "CH153000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "YiChun"
+    },
+    {
+      "cityName": "宜宾",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4ec00b2",
+      "hotelCityCode": "CH644000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Yibin"
+    },
+    {
+      "cityName": "宜昌",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4ed00b3",
+      "hotelCityCode": "CH443000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Yichang"
+    },
+    {
+      "cityName": "宜春",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4ee00b4",
+      "hotelCityCode": "CH336000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "YiChun"
+    },
+    {
+      "cityName": "义乌",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4ee00b5",
+      "hotelCityCode": "CH322000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Yiwu"
+    },
+    {
+      "cityName": "银川",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4ef00b6",
+      "hotelCityCode": "CH750000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Yinchuan"
+    },
+    {
+      "cityName": "榆林",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4f000b7",
+      "hotelCityCode": "CH719000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Yulin"
+    },
+    {
+      "cityName": "运城",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4f200b9",
+      "hotelCityCode": "CH044000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Yuncheng"
+    },
+    {
+      "cityName": "湛江",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4f300ba",
+      "hotelCityCode": "CH524000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Zhanjiang"
+    },
+    {
+      "cityName": "张家界",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4f400bb",
+      "hotelCityCode": "CH427000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Zhangjiajie"
+    },
+    {
+      "cityName": "张家口",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4f500bc",
+      "hotelCityCode": "CH075000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "ZhangJiaKou"
+    },
+    {
+      "cityName": "张掖",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4f600bd",
+      "hotelCityCode": "CH734000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Zhangye"
+    },
+    {
+      "cityName": "郑州",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4f800bf",
+      "hotelCityCode": "CH450000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Zhengzhou"
+    },
+    {
+      "cityName": "中山",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4f800c0",
+      "hotelCityCode": "CH528400",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "ZhongShan"
+    },
+    {
+      "cityName": "重庆",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4fa00c2",
+      "hotelCityCode": "CH400000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Chongqing"
+    },
+    {
+      "cityName": "舟山",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4fa00c3",
+      "hotelCityCode": "CH316000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Zhoushan"
+    },
+    {
+      "cityName": "珠海",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4fb00c4",
+      "hotelCityCode": "CH519000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Zhuhai"
+    },
+    {
+      "cityName": "遵义",
+      "cityId": "8a88b3ce4ef2ded8014ef2e0e4fd00c5",
+      "hotelCityCode": "CH563000",
+      "flightCityCode": null,
+      "trainCityCode": null,
+      "py": "Zunyi"
+    }
+  ]
+}

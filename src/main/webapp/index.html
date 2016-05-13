@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>fang wei</title>
+    <!--
+    jquery-ui 在 components 目录下，通过模块名字可以直接引用。
+    -->
+    <link rel="stylesheet" type="text/css" href="/components/jquery-ui/themes/base/core_7c802ba.css" />
+    <link rel="stylesheet" type="text/css" href="/components/jquery-ui/themes/base/tabs_5a3d581.css" />
+    <link rel="stylesheet" type="text/css" href="/components/jquery-ui/themes/base/datepicker_77106fb.css" />
+    <link rel="stylesheet" type="text/css" href="/components/jquery-ui/themes/base/theme_0fb1364.css" />
+    <link rel="stylesheet" type="text/css" href="/components/bootstrap/dist/css/bootstrap.min_8bf70a2.css" />
+    <link rel="stylesheet" type="text/css" href="/components/zTree/css/zTreeStyle/zTreeStyle_284f5b4.css" />
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+</head>
+<body>
+
+<div class="boxSep" >
+    <div class="imgLiquidFill imgLiquid" style="width:100%; height:250px;">
+        <img alt="" src="https://img.alicdn.com/imgextra/i1/2024462951/TB2wJHWnVXXXXXEXXXXXXXXXXXX-2024462951.jpg"/>
+    </div>
+</div>
+
+<div class="boxSep" >
+    <div class="imgLiquidNoFill imgLiquid" style="width:100%; height:250px;">
+        <img alt="" src="http://img12.360buyimg.com/vclist/jfs/t2755/315/888648067/24220/aefcdf6d/572aa444Ne1d99217.jpg"/>
+    </div>
+</div>
+
+<div class="boxSep" >
+    <div class="imgLiquidNoFill imgLiquid" style="width:100%; height:250px;">
+        <img alt="" src="http://img30.360buyimg.com/popWaterMark/jfs/t2206/231/2370398141/251879/c0150a59/570634a4Nf4448fcd.jpg"/>
+    </div>
+</div>
+
+<div class="boxSep" >
+    <div class="imgLiquidNoFill imgLiquid" style="width:100%; height:250px;">
+        <img alt="" src="http://img10.360buyimg.com/imgzone/jfs/t2617/43/817264919/459873/94b3b941/57283d1eNe86d63e7.jpg"/>
+    </div>
+</div>
+
+
+   <!--  <div class="wrap">
+            <div class="w-left fl">
+                <div class="breadcrumb">
+                    <span>文件目录</span>
+                    <span class="fr">操作</span>
+                </div>
+                <div class="fr action">
+                    <button class="btn btn-default btn-sm" id="create">增加文件夹</button>
+                    <button class="btn btn-default btn-sm" id="create_sub">增加子目录</button>
+                    <button class="btn btn-default btn-sm" id="rename">修改文件夹</button>
+                    <button class="btn btn-default btn-sm" id="remove">删除文件夹</button>
+                </div>
+                <ul id="tree" class="ztree"></ul>
+            </div>
+            <div class="w-right fl">
+                <ol class="breadcrumb">
+                    <li><a>全部</a></li>
+                </ol>
+                <div class="toolbars" ng-show="view_mode">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                            新建页面 <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a class="action">空白页</a></li>
+                            <li><a class="action" title="带导航栏和底部工具栏">默认页</a></li>
+                            <li><a class="action">微信素材页</a></li>
+                        </ul>
+                    </div>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                            更多... <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu " role="menu">
+                            <li><a class="action">复制到...</a></li>
+                            <li><a class="action">移动到...</a></li>
+                            <li><a class="action">删除页面</a></li>
+                        </ul>
+                    </div>
+                    <div class="input-group" style="float:left;width:50%;margin-right:4px;">
+                        <input type="text" class="string form-control page_id" id="search-page-id" placeholder="页面编号" name="page_id" value="">
+                        <span class="input-group-addon">或</span>
+                        <input type="text" class="string form-control page_title" id="search-page-title" placeholder="名称" name="page_name" value="">
+                      <span class="input-group-btn">
+                        <button class="btn btn-default" >搜索</button>
+                      </span>
+                    </div>
+                </div>
+
+                <div id="tableList" class="table-items"></div>
+                <div class="paginator-box">
+                    <ul class="pagination">
+                        <li class="active"><a title="Current page is 1">1</a></li>
+                        <li><a title="Go to page 2">2</a></li>
+                        <li><a title="Go to next page">&gt;</a></li>
+                        <li><a title="Go to last page">&gt;&gt;</a></li>
+                    </ul>
+                </div>
+            </div>
+
+    </div> -->
+
+<script type="text/javascript" src="/require_ab06f67.js"></script>
+<script type="text/javascript">/*resourcemap*/
+require.config({paths:{
+  "components/jquery/jquery": "/components/jquery/jquery_c090017",
+  "components/comp_underscore/underscore": "/components/comp_underscore/underscore_aedb37c",
+  "components/angular.js/angular": "components/angular.js/angular",
+  "script/imgLiquid-min": "/script/imgLiquid-min",
+  "script/config/base": "/script/config/base_ea4335f",
+  "script/config/urls": "/script/config/urls_110635d",
+  "script/config/config": "/script/config/config_268aaef",
+  "script/service/httpRequest": "/script/service/httpRequest_716d45c",
+  "script/service/service": "/script/service/service_115927f",
+  "script/imgLiquid-min": "/script/imgLiquid-min",
+  
+  "components/zTree/js/jquery.ztree.core": "/components/zTree/js/jquery.ztree.core_003f3b9"
+}});
+
+
+
+
+require(['components/jquery/jquery','script/imgLiquid-min','components/comp_underscore/underscore'], function($, _) {
+	
+	$(function(){
+        require(['components/bootstrap/dist/js/bootstrap.min']);
+       
+    });
+
+     $(".imgLiquidFill").imgLiquid({
+        fill: false,
+        horizontalAlign: "center",
+        verticalAlign: "center"
+    });
+    
+    $(".imgLiquidNoFill").imgLiquid({
+        fill: false,
+        horizontalAlign: "center",
+        verticalAlign: "50%"
+    });
+
+    /* var zTree;
+    var setting = {
+        view: {
+            dblClickExpand: false,
+            showLine: true,
+            selectedMulti: false
+        },
+        data: {
+            simpleData: {
+                enable:true,
+                idKey: "id",
+                pIdKey: "pId",
+                rootPId: ""
+            }
+        },
+        callback: {
+            beforeClick: function(treeId, treeNode) {
+                var zTree = $.fn.zTree.getZTreeObj("tree");
+                if (treeNode.isParent) {
+                    zTree.expandNode(treeNode);
+                    return false;
+                } else {
+                    // demoIframe.attr("src", treeNode.file + ".html");
+                    return true;
+                }
+            }
+        }
+    };
+
+    var t = $("#tree");
+
+    require(['script/service/service', 'components/zTree/js/jquery.ztree.core'], function(cService) {
+
+        // 请求子节点
+        cService.getSubnodes().then(function(data){
+
+            t = $.fn.zTree.init(t, setting, data.folders);
+            zTree = $.fn.zTree.getZTreeObj("tree");
+
+        });
+
+        cService.getEnter().then(function(data){
+            var template = function(obj){
+var __t,__p='',__j=Array.prototype.join,print=function(){__p+=__j.call(arguments,'');};
+with(obj||{}){
+__p+='<table class="table table-striped">\n    <thead>\n    <tr>\n        <th></th>\n        <th>页面编号</th>\n        <th>名称</th>\n        <th>最后更新时间</th>\n        <th>类型</th>\n        <th>修改人</th>\n        <th>操作</th>\n    </tr>\n    </thead>\n    <tbody class="page-table">\n\n    ';
+ _.each(obj, function(item) { 
+__p+='\n    <tr class="ng-scope">\n        <td><input class="select-box" type="checkbox"></td>\n        <td class="ng-binding">'+
+((__t=( item.id ))==null?'':__t)+
+'</td>\n        <td>\n            <div class="title" title="'+
+((__t=( item.title ))==null?'':__t)+
+'" >\n                <span >'+
+((__t=( item.name ))==null?'':__t)+
+'</span>\n            </div>\n            <!--input class="form-control ng-pristine ng-valid ng-hide" -->\n        </td>\n        <td class="ng-binding">'+
+((__t=( item.created_at.split('.')[0] ))==null?'':__t)+
+'</td>\n        <td class="ng-binding">'+
+((__t=( item.page_type ))==null?'':__t)+
+'</td>\n        <td class="ng-binding">'+
+((__t=( item.name ))==null?'':__t)+
+'</td>\n        <td>\n            <a href="#" ng-click="edit_page()" class="btn btn-default btn-xs">编辑</a>\n            <a href="#"></a>\n        </td>\n    </tr>\n    ';
+ }) 
+__p+='\n\n\n    </tbody>\n</table>';
+}
+return __p;
+};
+            //$('#tableList').html(template(data.pages));
+        });
+    }); */ 
+
+    
+});
+</script>
+</body>
+</html>
